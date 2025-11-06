@@ -97,5 +97,6 @@ az vm extension set
 With that out of the way I had finally installed Nginx (see Nginx.png)
 
 References:
+
 https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/
 https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-sku-not-available?tabs=azure-cli
