@@ -17,7 +17,6 @@ Task 2: Create a Linux virtual machine
 
 
 az vm create
-
 --resource-group MinuVirtukas  
 --name my-vm  
 --size Standard_D2s_v5  
