@@ -15,8 +15,8 @@ Task 1: Create a resource group using Cloud shell
 Task 2: Create a Linux virtual machine
 1. From the cloud shell we run the command "az vm create" command to create Linux VM
 
-
 az vm create
+
 --resource-group MinuVirtukas  
 --name my-vm  
 --size Standard_D2s_v5  
