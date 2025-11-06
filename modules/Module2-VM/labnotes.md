@@ -3,9 +3,8 @@
 
 
 Goal: 
-Create a virtual machine > Install Nginx > Access web server > List current security group rules > Create the network security rule > Access web server again
-
-Why is this important? 
+Create a virtual machine > Install Nginx 
+ 
 
 Task 1: Create a resource group using Cloud shell
 1. Logged into Azure and opened up Cloud shell (Azure CLI)
