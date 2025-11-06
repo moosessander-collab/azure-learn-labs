@@ -10,17 +10,18 @@ Task 1: Create a resource group using Cloud shell
 1. Logged into Azure and opened up Cloud shell (Azure CLI)
 2. Opened up Cloud shell from the top right corner next to your profile and typed in:
 
+```CLI
 az group create 
 
 --name MinuVirtukas 
 
 --location eastus
-
+```
 3. With that we created a resource group named MinuVirtukas (see 1.png)
 
 Task 2: Create a Linux virtual machine
 1. From the cloud shell we run the command "az vm create" command to create Linux VM:
-
+```CLI
 az vm create
 
 --resource-group MinuVirtukas  
@@ -30,4 +31,4 @@ az vm create
 --image Ubuntu2204  
 --admin-username virtualhermit  
 --generate-ssh-keys
-   
+```
