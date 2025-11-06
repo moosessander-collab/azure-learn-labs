@@ -41,10 +41,22 @@ To do that I used the following command
 ```CLI
 az group delete --name MinuVirtukas
 ```
-Before I reverted back to task1 commandline I needed to know whether norway east region had the SKU needed to perform the task, and if not the exact same one as described in the learning path then at least an alternative that would work.
+Before I reverted back to task1 commandline I needed to know whether norway east region had the SKU needed to perform the task, and if not the exact same one as described in the learning path then at least an alternative that would work. The learning path wanted me to use Standard_D2s_v5 so I had to keep in mind that it either needed to be exact same or at least Standard_D
 
 To do that I used the command line
 ```CLI
 az vm list-skus --location norwayeast --output table
 ```
+This command gave as an output of all the available SKUS in norwayeast region and in it I could see which ones I could use and which ones I couldn't due to subsrciption restrictions. (see 2.png)
 
+However the list was a bit too long and uneasy for the eyes for me to properly filter out, additionally it showed me all the SKUs but I needed Standard_D2s speficically. 
+
+So a bit of googling and forum reading I found a commandline that would filter out all the available SKUs available in the region I was using as well as filter out all the Standard_D2s variants
+```CLI
+az vm list-skus --location centralus --size Standard_D --all --output table
+```
+I modified the commandline to filter out specifically Standard_D2s and additionally to leave out all the SKUs that werent available for my subscription
+```CLI
+az vm list-skus --location norwayeast --size Standard_D2s --all false --output table
+```
+With that commandline I managed to go from 100s of rows to pick from to just 4 (see 3.png)
