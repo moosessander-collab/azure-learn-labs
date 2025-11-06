@@ -62,7 +62,9 @@ az vm list-skus --location norwayeast --size Standard_D2s --all false --output t
 With that commandline I managed to go from 100s of rows to pick from to just 4 (see 3.png)
 The end result was that Standard_D2s_v5 was in fact available in this region but I wanted to know how to filter SKUs with ease for my own benefit, this step was easily skippable however I wanted to challenge my self and troubleshoot, because that way what im doing I will also remember. Trial and error.
 
-3. Went back to task1 and created a new resource group again, this time with a region that had the SKU that I needed
+Task 2: Create a Linux VM
+
+I Went back to task1 and created a new resource group again, this time with a region that had the SKU that I needed
 ```CLI
 az group create --name MinuVirtukas --location norwayeast
 ```
@@ -78,3 +80,6 @@ az vm create
 --generate-ssh-keys
 ```
 With that out of the way I could move on and install Nginx (for the result see 4.png) *P.S I do apologize for the 4.png if it looks confusing at first, Azures CLI is clunky at times*
+
+Task 3: Install Nginx
+Once I had my VM created I needed to use Custom script extension to install Nginx. For that we needed to run ``` az vm extension set``` command to configure Nginx to my VM
