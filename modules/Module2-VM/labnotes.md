@@ -60,3 +60,20 @@ I modified the commandline to filter out specifically Standard_D2s and additiona
 az vm list-skus --location norwayeast --size Standard_D2s --all false --output table
 ```
 With that commandline I managed to go from 100s of rows to pick from to just 4 (see 3.png)
+The end result was that Standard_D2s_v5 was in fact available in this region but I wanted to know how to filter SKUs with ease for my own benefit, this step was easily skippable however I wanted to challenge my self and troubleshoot, because that way what im doing I will also remember. Trial and error.
+
+3. Went back to task1 and created a new resource group again, this time with a region that had the SKU that I needed
+```CLI
+az group create --name MinuVirtukas --location norwayeast
+```
+4. Once the region was set and resource group created, I went and created the VM itself
+```CLI
+az vm create
+--resource-group MinuVirtukas
+--name minu-virtukas
+--size Standard_D2s_v5
+--public-ip-sku Standard
+--image Ubuntu2204
+--admin-username virtualhermit
+--generate-ssh-keys
+```
