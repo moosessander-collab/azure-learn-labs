@@ -13,6 +13,7 @@ Task 1: Create a resource group using Cloud shell
 az group create 
 
 --name MinuVirtukas 
+
 --location eastus
 
 3. With that we created a resource group named MinuVirtukas (see 1.png)
