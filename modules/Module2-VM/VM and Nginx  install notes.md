@@ -60,7 +60,7 @@ However I modified the commandline to filter out specifically Standard_D2s and a
 az vm list-skus --location norwayeast --size Standard_D2s --all false --output table
 ```
 With that commandline I managed to go from 100s of rows to pick from to just 4 (see filteredskus.png)
-The end result was that Standard_D2s_v5 was in fact available in this region but I wanted to know how to filter SKUs with ease for my own benefit, this step was easily skippable, however I wanted to challenge my self and troubleshoot because that way what im doing I will also remember. Trial and error.
+The end result was that Standard_D2s_v5 was in fact available in this region but I wanted to know how to filter SKUs with ease for my own benefit, this step was easily skippable in hindsight, however I wanted to challenge my self and troubleshoot because that way what im doing I will also remember. Trial and error.
 
 Task 2: Create a Linux VM
 
