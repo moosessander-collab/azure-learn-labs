@@ -47,7 +47,7 @@ Output ```minu-virtukasNSG```
 
 **Note!** By default azure VMs have at least one NSG. If you leave the default name for vm its going to be ```my-vmNSG```. But that is not my case.
 
-2. Now I needed to list the rules associated with the NSG:
+### 2. Now I needed to list the rules associated with the NSG:
 
 ```bash
 az network nsg rule list \
@@ -78,7 +78,7 @@ Next I needed to also allow inbound connections on port 80 to access over HTTP.
 
 Task 3: Create NSG rule
 
-Ran the following ```az network nsg rule create```
+1. Ran the following ```az network nsg rule create```
 ```bash
 az network nsg rule create \
 --resource-group MinuVirtukas \
@@ -91,7 +91,10 @@ az network nsg rule create \
 ```
 **Note!** For learning purposes I set the priority to 100 as instructed.
 
-Output [nsgrule.png](../screenshots/nsgrule.PNG) 
+Output: [nsgrule.png](../screenshots/nsgrule.PNG) 
+
+Then I wanted to verify the configuration 
+
 
 
 
