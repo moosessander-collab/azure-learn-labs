@@ -9,7 +9,7 @@ Goal: In this exercise I needed to configure network access to the Virtual machi
 
 1. For starters I need to access web server that I had installed prior to this exercise. To start things off I used ```az vm list-ip-addresses``` command to get my VMs IP address and store the result as a Bash variable:
 
-#### Command
+#### Command: az vm list-ip-addresses
 ```bash
 IPADDRESS="$(az vm list-ip-addresses \
 --resource-group "MinuVirtukas" \
@@ -41,6 +41,7 @@ So there are 2 ways to ping whether VMs web server is up or not.
 
 1. Next I ran the command ```az network nsg list``` to see what NSG was associated with my VM
 
+### Command
 ```bash
 az network nsg list \
 --resource-group "MinuVirtukas" \
