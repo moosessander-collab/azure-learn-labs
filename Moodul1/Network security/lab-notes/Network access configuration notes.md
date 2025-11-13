@@ -123,6 +123,8 @@ We get the desired output:
 Then i refreshed my home page in my browser:
 [![Resource Group](../screenshots/welcome2.PNG)](../screenshots/welcome2.PNG)
 
+### Challenge for myself
+
 However the message is too "default" and I wanted to change it to smt more funny and welcoming.
 
 So to change it I ran ```az vm list-ip-addresses``` again.
@@ -137,7 +139,10 @@ az vm list-ip-addresses \
 ```
 Output: ```20.251.205.43```
 
-Then I ran ```ssh virtualhermit@20.251.205.43```
+Then I ran 
+
+### Command: Open SSH session to VM
+```ssh virtualhermit@20.251.205.43```
 
 And got met with error 
 ```
@@ -161,3 +166,6 @@ az vm show \
 --output tsv
 ```
 Output: ```virtualhermit```
+
+Then I needed to run command that opens up the SSH session to the VM as I tried before. See: [Command: Open SSH session to VM](#command-Open-SSH-session-to-VM)
+
