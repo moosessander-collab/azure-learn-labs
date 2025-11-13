@@ -102,7 +102,8 @@ az network nsg rule create \
 
 Output: [nsgrule.png](../screenshots/nsgrule.PNG) 
 
-Then I wanted to verify the configuration by using the same command I used u
+Then I wanted to verify the configuration by using the same command I used in Task 2: [Command: NSG rule list](#command-nsg-rule-list)
+
 
 
 
