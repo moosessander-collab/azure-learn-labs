@@ -120,6 +120,8 @@ allow-http         100         80      Allow
 We get the desired output:
 [![Resource Group](../screenshots/welcome.PNG)](../screenshots/welcome.PNG)
 
+Then i refreshed my home page in my browser:
+[![Resource Group](../screenshots/welcome2.PNG)](../screenshots/welcome2.PNG)
 
-
+However the message is too "default" and I wanted to change it to smt more funny and welcoming
 
