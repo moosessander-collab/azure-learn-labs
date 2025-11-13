@@ -46,10 +46,12 @@ az network nsg list \
 Ran into another error [error2.png](../screenshots/error2.PNG) 
 In the lab it is mentioned that every VM on Azure is associated with at least one network security group but what they failed to mention was that the name of it is not always defaulted to *my-vmNSG*.
 
-To fix it I ran
+To fix it I ran the following command to see the name of mine:
 ```bash
 az network nsg list --resource-group MinuVirtukas --output table
 ```
+The result shocked me [nsg.png](../screenshots/nsg.PNG). Of course it was something that obvious in hinsight.
+
 
 
 
