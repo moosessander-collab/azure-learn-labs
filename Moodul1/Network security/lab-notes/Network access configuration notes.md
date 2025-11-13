@@ -23,7 +23,7 @@ After fixing my GRAVE error the command went through [fix.png](../screenshots/fi
 
 3. Now I needed to download the home page to see if the VM is reachable and whether I could access the webserver (Spoiler alert it wasnt and I couldnt for obvious reasons):
 
-### Command: Connection testing
+#### Command: Connection testing
 ```bash
 curl --connect-timeout 5 http://$IPADDRESS
 ```
@@ -41,7 +41,7 @@ So there are 2 ways to ping whether VMs web server is up or not.
 
 1. Next I ran the command ```az network nsg list``` to see what NSG was associated with my VM
 
-### Command: NSG name
+#### Command: NSG name
 ```bash
 az network nsg list \
 --resource-group "MinuVirtukas" \
@@ -54,7 +54,7 @@ Output ```minu-virtukasNSG```
 
 2. Now I needed to list the rules associated with the NSG:
 
-### Command: NSG rule list
+#### Command: NSG rule list
 ```bash
 az network nsg rule list \
 --resource-group MinuVirtukas \
@@ -64,7 +64,7 @@ This prints out a large block of JSON which im not satisfied with because I need
 
 So I ran the ```az network nsg rule list``` again:
 
-### Command: NSG rule list
+#### Command: NSG rule list
 ```bash
 az network nsg rule list \
 --resource-group MinuVirtukas \
@@ -87,7 +87,7 @@ Next I needed to also allow inbound connections on port 80 to access over HTTP.
 
 1. Ran the following ```az network nsg rule create```
 
-### Command: NSG rule create
+#### Command: NSG rule create
 ```bash
 az network nsg rule create \
 --resource-group MinuVirtukas \
