@@ -72,4 +72,26 @@ Name               Priority    Port    Access
 default-allow-ssh  1000        22      Allow
 ```
 
+**Note!** By default Linxu VMs NSG allows network access only on port 22.
+
+Next I needed to also allow inbound connections on port 80 to access over HTTP.
+
+Task 3: Create NSG rule
+
+Ran the following ```az network nsg rule create```
+```bash
+az network nsg rule create \
+--resource-group MinuVirtukas \
+--nsg-name minu-virtukasNSG \
+--name allow-http \
+--protocol tcp \
+--priority 100 \
+--destination-port-range 80 \
+--access Allow
+```
+**Note!** For learning purposes I set the priority to 100 as instructed.
+
+Output [nsgrule.png](../screenshots/nsgrule.PNG) 
+
+
 
