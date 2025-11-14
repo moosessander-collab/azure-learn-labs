@@ -222,3 +222,22 @@ sudo nano /var/www/html/index.html
 After some magic in the HTML, I got my final result I was working towards
 
 [![Resource Group](../screenshots/final.PNG)](../screenshots/final.PNG)
+
+
+### References
+
+### Azure:
+
+https://learn.microsoft.com/et-ee/azure/virtual-machines/linux/ssh-from-windows
+
+https://learn.microsoft.com/et-ee/azure/virtual-machines/linux/create-ssh-keys-detailed
+
+https://learn.microsoft.com/en-us/troubleshoot/azure/virtual-machines/linux/troubleshoot-ssh-connection
+
+https://learn.microsoft.com/et-ee/cli/azure/vm?view=azure-cli-latest
+
+### Github:
+
+https://www.markdownguide.org/basic-syntax/
+
+https://docs.github.com/en/get-started/writing-on-github
