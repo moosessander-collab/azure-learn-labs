@@ -126,7 +126,7 @@ Then i refreshed my home page in my browser:
 
 ### Challenge for myself
 
-However the message is too "default" and I wanted to change it to smt more funny and welcoming.
+The prompt message was too "default" and I wanted to change it to smt more funny and welcoming.
 
 So to change it I ran ```az vm list-ip-addresses``` again.
 
